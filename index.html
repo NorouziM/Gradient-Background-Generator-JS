@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Google Font (Kufam) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Load Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Gradient Background</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gradient Background Generator</h1>
+      <div class="color-input first-input">
+        <input id="color1" type="color" name="color1" value="#FF416C" />
+        <input type="range" class="color-range1" value="0" />
+      </div>
+      <div class="color-input second-input">
+        <input id="color2" type="color" name="color2" value="#FF4B2B" />
+        <input type="range" class="color-range2" value="50" />
+      </div>
+      <div class="radius-picker-wrap">
+        <div class="radius-picker js-radius-picker" data-degree="28">
+          <i class="radius-picker__handle"></i>
+          <span class="radius-picker__value"></span>
+        </div>
+      </div>
+
+      <h2>Current CSS Code</h2>
+
+      <div class="bd-clipboard">
+        <textarea class="css-code" readonly></textarea>
+        <button
+          class="btn-clipboard"
+          title=""
+          data-original-title="Copy to clipboard"
+        >
+          Copy
+        </button>
+      </div>
+    </div>
+    <!-- Load Script -->
+
+    <script type="text/javascript" src="bundle.js"></script>
+  </body>
+</html>
